@@ -1,0 +1,152 @@
+/*Container*/
+#the-scene {
+  width: 800px;
+  height: 600px;
+  background: url('images/background.png') top left no-repeat;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#fence-far {
+  position: absolute;
+  top: 50px;
+  -webkit-animation: fence-far linear 1.4s infinite;
+  animation: fence-far linear 1.4s infinite;
+}
+
+#fence-near {
+  position: absolute;
+  top: 125px;
+  -webkit-animation: fence-near linear 5s infinite;
+  animation: fence-near linear 5s infinite;
+}
+
+#pig-leg-left-front {
+  position: absolute;
+  top: 350px;
+  left: 450px;
+  -webkit-animation: pig-leg-left-front ease-in-out 1s infinite alternate;
+  animation: pig-leg-left-front ease-in-out 1s infinite alternate;
+}
+
+#pig-leg-left-back {
+  position: absolute;
+  top: 350px;
+  left: 180px;
+  -webkit-animation: pig-leg-left-back ease-in-out 1s infinite alternate;
+  animation: pig-leg-left-back ease-in-out 1s infinite alternate;
+}
+
+#pig-tail {
+  position: absolute;
+  top: 240px;
+  left: 145px;
+  -webkit-animation: pig-tail ease-in-out .5s infinite alternate;
+  animation: pig-tail ease-in-out .5s infinite alternate;
+}
+
+#pig-body {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  -webkit-animation: pig-body ease-in-out .5s infinite alternate;
+  animation: pig-body ease-in-out .5s infinite alternate;
+}
+
+#pig-ear {
+  position: absolute;
+  top: 230px;
+  left: 440px;
+  -webkit-animation: pig-tail ease-in-out .5s infinite alternate;
+  animation: pig-tail ease-in-out .5s infinite alternate;
+}
+
+#pig-leg-right-front {
+  position: absolute;
+  top: 350px;
+  left: 460px;
+  -webkit-animation: pig-leg-right-front ease-in-out 1s infinite alternate;
+  animation: pig-leg-right-front ease-in-out 1s infinite alternate;
+}
+
+#pig-leg-right-back {
+  position: absolute;
+  top: 350px;
+  left: 190px;
+  -webkit-animation: pig-leg-right-back ease-in-out 1s infinite alternate;
+  animation: pig-leg-right-back ease-in-out 1s infinite alternate;
+}
+
+
+
+@-webkit-keyframes fence-near {
+  from {
+    left:0px}
+  to {
+    left: -278px;}
+}
+
+@-webkit-keyframes fence-far {
+  from {
+    left:0px}
+  to {
+    left: -103px;}
+}
+
+@-webkit-keyframes pig-body {
+  from {
+    top: 250px;}
+  to {
+    top: 245px;;}
+}
+
+@-webkit-keyframes pig-tail {
+  from {
+    top: 243px;
+    -webkit-transform:rotate(0deg);}
+  to {
+    top: 233px;
+    -webkit-transform:rotate(-10deg);}
+}
+
+@-webkit-keyframes pig-ears {
+  from {
+    top: 230px;
+    -webkit-transform:rotate(0deg);}
+  to {
+    top: 222px;
+    -webkit-transform:rotate(15deg);}
+}
+
+@-webkit-keyframes pig-leg-right-front {
+  from {
+    -webkit-transform:rotate(20deg);}
+  to {
+    -webkit-transform:rotate(-20deg);}
+}
+
+@-webkit-keyframes pig-leg-left-back {
+  from {
+    -webkit-transform:rotate(20deg);}
+  to {
+    -webkit-transform:rotate(-20deg);}
+}
+
+@-webkit-keyframes pig-leg-left-front {
+  from {
+    -webkit-transform:rotate(-20deg);}
+  to {
+    -webkit-transform:rotate(20deg);}
+}
+
+@-webkit-keyframes pig-leg-right-back {
+  from {
+    -webkit-transform:rotate(-20deg);}
+  to {
+    -webkit-transform:rotate(20deg);}
+}
+
+
+
